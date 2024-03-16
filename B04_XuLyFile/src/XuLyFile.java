@@ -109,8 +109,8 @@ public class XuLyFile {
         // String path = "D:\\BaiTapDNTU\\temp";
         // XuLyFile.taoThuMuc(path);
 
-        // String path = "D:\\temp\\dir1\\dir2\\dir3";
-        // XuLyFile.taoThuMuc(path);
+        String path = "D:\\BaiTapDNTU\\temp\\dir1\\dir2\\dir3";
+        XuLyFile.taoThuMuc(path);
 
         // String path = "D:\\temp\\BAITAP.docx";
         // XuLyFile.taoTapTin(path);
@@ -125,6 +125,6 @@ public class XuLyFile {
         // XuLyFile.xoaTatCa(path);
 
         // XuLyFile.hienThiCayThuMuc("D:\\temp");
-        XuLyFile.kietTraThongTin("D:\\temp\\BAITAP.docx");
+        // XuLyFile.kietTraThongTin("D:\\temp\\BAITAP.docx");
     }
 }
