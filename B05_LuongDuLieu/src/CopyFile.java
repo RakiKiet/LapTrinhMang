@@ -6,8 +6,8 @@ import java.util.Scanner;
 
 public class CopyFile {
     public static void copyFile(String src, String dest) {
-        // Tao ra mot cai file moi
-        // Tung buoc doc du lieu tu file cu => ghi sang file moi
+        // Tạo ra một cái file mới
+        // Từng bước đọc dữ liệu từ file cũ => ghi sang file mới
         File fileSrc = new File(src); // 1
         File fileDest = new File(dest);// 2
         try {
@@ -18,20 +18,20 @@ public class CopyFile {
                     System.out.println("File dest đã tồn tại, bạn có muốn ghi đè hay không(y/n)?");
                     Scanner sc = new Scanner(System.in);
                     String c = sc.nextLine();
-                    if (c.equals("n")) { // Neu khong muon ghi de thi ngung chuong trinh
+                    if (c.equals("n")) { // Nếu không muốn ghi đè thì ngưng chương trình
                         return;
                     }
                 } else {
                     fileDest.createNewFile();
                 }
 
-                // Tao stream de doc du lieu
+                // Tạo stream để đọc dữ liệu
                 FileInputStream fis = new FileInputStream(fileSrc);
 
-                // Tao stream ghi du lieu
+                // Tạo stream ghi dữ liệu
                 FileOutputStream fos = new FileOutputStream(fileDest);
 
-                // Copy tung byte
+                // Copy từng byte
                 int b = 0;
                 while(true){
                     b = fis.read(); // Đọc lên một byte

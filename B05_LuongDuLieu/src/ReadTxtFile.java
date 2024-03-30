@@ -3,7 +3,7 @@ import java.nio.Buffer;
 
 public class ReadTxtFile {
     public static void main(String[] args) {
-        try{
+        try {
             String src = "D:\\BaiTapDNTU\\LapTrinhMang\\BTJava\\B05_LuongDuLieu\\src\\vidu.txt";
             File file = new File(src); // Buoc 1
             // Tạo Inputstream
@@ -13,13 +13,12 @@ public class ReadTxtFile {
             // Tạo BufferedReader
             BufferedReader br = new BufferedReader(isr);
             // Đọc dữ liệu
-            while(true){
+            while (true) {
                 String line = br.readLine(); // Đọc 1 dòng
-                if (line==null) break; // Nếu không có dữ liệu
+                if (line == null) break; // Nếu không có dữ liệu
                 System.out.println(line); // Xuất ra màn hình
             }
-        }
-        catch(IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
